@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Torneio Mestre!!!</title>
+</head>
+
+<body>
+    <div class="container">
+       <div id="meuContainer2" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: 9999; pointer-events: none;"></div>
+       <div id="meuContainer" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: 9999; pointer-events: none;"></div>
+        <div class="container__conteudo">  
+          <button onclick="dificuldadeFacil()" id="facil" class="container__dificuldades">FACIL</button>
+          <button onclick="dificuldadeNormal()" id="normal" class="container__dificuldades">NORMAL</button>
+          <button onclick="dificuldadeDificil()" id="dificil" class="container__dificuldades">DIFÍCIL</button>
+          <button onclick="dificuldadeMDificil()" id="mDificil" class="container__dificuldades">MUITO DIFÍCIL</button>
+          <img src="./img/torneio.gif" class="container__imagemMestre" id="imagemMudavel">
+          <img class="container__timer" id="timer">
+           <button onclick="setarTempoDePerda()" id="comecar" class="container__comecar">COMEÇAR?</button>
+           <button onclick="socar()" id="socar" class="container__botao">APERTE REPETIDAMENTE!</button>
+            <button onclick="selecionarEmanuel()" class="container__emanuel" id="emanuel"></button>
+            <button onclick="selecionarMylena()" class="container__mylena" id="mylena"></button>
+            <button onclick="selecionarYago()" class="container__yago" id="yago"></button>
+            <button onclick="selecionarDel()" class="container__del" id="del"></button>
+            <button onclick="selecionarMateus()" class="container__mateus" id="mateus"></button>
+            <button onclick="selecionarEmanuelDoMal()" class="container__emanueldomal" id="emanuelDoMal"></button>
+            <button onclick="selecionarMylenaDoMal()" class="container__mylenadomal" id="mylenaDoMal"></button>
+            <button onclick="selecionarYagoDoMal()" class="container__yagodomal" id="yagoDoMal"></button>
+            <button onclick="selecionarDelDoMal()" class="container__deldomal" id="delDoMal"></button>
+            <button onclick="selecionarMateusDoMal()" class="container__mateusdomal" id="mateusDoMal"></button>
+            <h2 id="texto">escolha a dificuldade</h2>
+            <div class="container__informacoes">
+                <div class="container__texto">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js" defer></script>
+</body>
+
+</html>
